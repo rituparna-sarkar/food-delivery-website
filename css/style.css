@@ -1,0 +1,248 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0%;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root {
+    --navbar-height: 59px;
+}
+
+/* navigation bar */
+
+
+/* Navigation Bar:logo and image */
+#logo {
+    margin: 15px 15px;
+
+}
+
+#logo img {
+    height: 70px;
+    margin: 35px 33px;
+    filter: invert();
+}
+
+#navbar {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    top: 0px;
+
+}
+
+/* Navigation Bar:list styling */
+#navbar ul {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#navbar::before {
+    content: "";
+    background-color: #4f1a1ac8;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.3;
+    top: 0px;
+    left: 0px;
+}
+
+#navbar ul li {
+    /* color: aliceblue; */
+    list-style: none;
+    font-size: 1rem;
+
+}
+
+#navbar ul li a {
+    color: rgb(253, 248, 248);
+    display: block;
+    padding: 3px 22px;
+    text-decoration: none;
+    border-radius: 20px;
+    list-style: none;
+    font-size: 1.2rem;
+
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* home section */
+#home {
+    display: flex;
+    height: 550px;
+    flex-direction: column;
+    padding: 3px 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* body{ */
+/* background-image: url('../img/backro.jpg'); */
+/* background:cover; */
+/* background-size: 1400px; */
+/* height: 100%; */
+/* width: 100%; */
+/* opacity: .8; */
+
+/* } */
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('../img/backro.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.89;
+    top: 0px;
+    left: 0px;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    /* font-family: 'Noto Sans JP', sans-serif; */
+}
+
+/* sevices section */
+#services {
+    margin: 24px;
+    display: flex;
+}
+
+#services .box {
+    background-color: rgb(186, 149, 100);
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 11px;
+    background: rgba(208, 179, 179, 0.349);
+    margin-bottom: 20px;
+}
+
+#services .box img {
+    height: 100px;
+    margin: auto;
+    display: block;
+}
+
+/* client section */
+#client-section {
+    /* height: 400px; */
+    position: relative;
+
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('../pasta.jpg');
+    width: 100%;
+    height: 100%;
+
+}
+
+.client-item {
+    padding: 24px;
+
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img {
+    height: 100px;
+}
+
+/* contact section */
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../img/conta.jpg') no-repeat center center/cover;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+}
+
+#contact-box input,#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+
+
+
+}
+#contact-box form{
+    font-size: 1.3rem;
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* sevices */
+.h-primary {
+    font-size: 3.0rem;
+    padding: 60px;
+}
+
+.h-secondary {
+    font-size: 2rem;
+    padding: 12px;
+}
+
+/* utility class */
+
+/* font-family: 'Noto Sans JP', sans-serif; */
+
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid rgb(19, 19, 19);
+    background-color: rgb(249, 230, 61);
+    color: rgb(17, 8, 8);
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.center {
+    text-align: center;
+    /* font-size: 48px; */
+}
